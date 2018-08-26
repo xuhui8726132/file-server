@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: file
+  cloud:
+    config:
+      name: file
+      profile: dev
+
+
+
+
+
+
