@@ -1,10 +1,22 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://xuhui:xuhui123456@localhost:1111/eureka/
+  instance:
+    prefer-ip-address: true
 spring:
   application:
-    name: file
+    name: file-server
   cloud:
     config:
       name: file
       profile: dev
+      discovery:
+        enabled: true
+        service-id: config-server
+      username: xuhui
+      password: xuhui123
+
 
 
 
